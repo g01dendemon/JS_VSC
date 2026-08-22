@@ -59,7 +59,7 @@ console.log(comparator3(massive[0],massive[1]));
 
 //#3
 
-function filter(massive,comparator){
+function filter(massive,comparator2){
     let big = massive[0];
     for (let i = 0; i < massive.length; i++) {
         if (comparator(massive[i],big)===1){
@@ -69,4 +69,26 @@ function filter(massive,comparator){
 return big;
 }
 
+const filter2 = function(massive,comparator2){
+    let big = massive[0];
+    for (let i = 0; i < massive.length; i++) {
+        if (comparator2(massive[i],big)===1){
+            big=massive[i]
+        }
+    }
+return big;
+}
+
+const filter3 =(massive,comparator3)=>{
+    let big = massive[0];
+    for (let i = 0; i < massive.length; i++) {
+        if (comparator3(massive[i],big)===1){
+            big=massive[i]
+        }
+    }
+return big;
+}
+
 console.log(filter(massive, comparator));
+console.log(filter2(massive, comparator2));
+console.log(filter3(massive, comparator3));
