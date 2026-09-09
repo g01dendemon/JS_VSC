@@ -140,6 +140,7 @@ if (index !== -1) {
 
       // 3. Читаем данные из файла
       console.log("Считываем данные из файла...");
+      
 
       const fileData = await readFile(filePath, "utf-8");
 
